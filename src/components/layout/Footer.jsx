@@ -42,9 +42,9 @@ export function Footer() {
           <div>
             <h4 className="text-sm font-medium uppercase tracking-wider mb-6 text-white/80">Connect</h4>
             <ul className="space-y-4 text-white/60 font-light text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Instagram</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Facebook</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">WhatsApp</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); alert("Instagram"); }} className="hover:text-white transition-colors">Instagram</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); alert("Facebook"); }} className="hover:text-white transition-colors">Facebook</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); alert("WhatsApp"); }} className="hover:text-white transition-colors">WhatsApp</a></li>
             </ul>
           </div>
 
@@ -53,8 +53,8 @@ export function Footer() {
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-white/40 text-xs font-light">
           <p>© {currentYear} {cafeData.cafe.name}. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); alert("Privacy Policy"); }} className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); alert("Terms of Service"); }} className="hover:text-white transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>

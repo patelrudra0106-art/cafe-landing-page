@@ -67,16 +67,16 @@ export function LocationContact() {
 
             <div className="flex flex-wrap gap-4">
               <button 
-                onClick={() => alert("Open directions")}
+                onClick={() => alert("Get Directions")}
                 className="px-8 py-4 rounded-full bg-cafe-charcoal text-white font-medium hover:bg-black transition-colors"
               >
                 Get Directions
               </button>
               <button 
-                onClick={() => alert("Open WhatsApp")}
+                onClick={() => alert("WhatsApp")}
                 className="px-8 py-4 rounded-full border border-cafe-charcoal/20 text-cafe-charcoal font-medium hover:bg-cafe-beige transition-colors"
               >
-                WhatsApp Us
+                WhatsApp
               </button>
             </div>
           </motion.div>
@@ -107,10 +107,10 @@ export function LocationContact() {
                   {cafeData.contact.address}
                 </p>
                 <button 
-                  onClick={() => alert("Google Maps opened")}
+                  onClick={() => alert("Google Maps")}
                   className="w-full py-3 rounded-xl bg-cafe-brown text-white text-sm font-medium hover:bg-black transition-colors"
                 >
-                  View on Google Maps
+                  Google Maps
                 </button>
               </GlassCard>
             </div>

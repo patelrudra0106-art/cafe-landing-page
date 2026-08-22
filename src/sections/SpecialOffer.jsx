@@ -32,10 +32,10 @@ export function SpecialOffer() {
                 Enjoy our signature coffee with a freshly prepared basque cheesecake. The perfect pairing for slow weekend afternoons.
               </p>
               <button 
-                onClick={() => alert("Reservation flow would open here")}
+                onClick={() => alert("Reserve a Table")}
                 className="w-full py-4 rounded-full bg-cafe-charcoal text-white font-medium hover:bg-black transition-colors"
               >
-                Order Now
+                Reserve a Table
               </button>
             </GlassCard>
           </motion.div>

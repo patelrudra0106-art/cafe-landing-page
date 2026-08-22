@@ -17,7 +17,7 @@ export function SocialGallery() {
           Follow us for fresh coffee, new creations and moments from the cafe.
         </p>
         <button 
-          onClick={() => alert("Opening Instagram")}
+          onClick={() => alert("Instagram")}
           className="px-8 py-3 rounded-full bg-cafe-charcoal text-white text-sm font-medium hover:bg-black transition-colors"
         >
           Follow Us on Instagram

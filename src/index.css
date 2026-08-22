@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: theme('colors.cafe-white');
+    color: theme('colors.cafe-charcoal');
+  }
+  
+  body {
+    @apply antialiased overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/40 backdrop-blur-md border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.05)];
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  
+  .glass-panel-dark {
+    @apply bg-black/40 backdrop-blur-md border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.2)];
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
